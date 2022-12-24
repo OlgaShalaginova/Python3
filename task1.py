@@ -6,7 +6,7 @@ import os
 os.system('cls')
 import random
 
-number = int(input('Введите число: '))
+number = int(input("Введите число: "))
 sum = 0
 list_numbers = []
 for i in range(number):
