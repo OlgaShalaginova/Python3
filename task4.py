@@ -8,11 +8,13 @@ import os
 os.system('cls')
 
 number = int(input("Введите число: "))
+t = number
 print(number, end='')
-bin = ''
+bin_n = ''
 while number // 2 > 0:
-    bin += str(number % 2)
+    bin_n += str(number % 2)
     number = number // 2
     if number == 1:
-        bin += '1'
-print(" ->", bin)
+        bin_n += '1'
+print(" ->", bin_n[::-1])
+print("Проверка:", bin(t))
